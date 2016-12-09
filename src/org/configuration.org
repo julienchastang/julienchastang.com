@@ -14,7 +14,7 @@
 #+SETUPFILE: ../templates/level-0.org
 #+INCLUDE: ../templates/level-0.org
 
-This website heavily borrows from the work of [[http://explog.in/][Kunal Bhalla]].
+This website heavily borrows from the work of [[http://explog.in/][Kunal Bhalla]] and can be found on [[https://github.com/julienchastang/julienchastang.github.io][github]]. 
 
 * Imports
 #+BEGIN_SRC emacs-lisp :results none
