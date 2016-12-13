@@ -1,0 +1,38 @@
+#+OPTIONS: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline author:t c:nil
+#+OPTIONS: creator:nil d:(not "LOGBOOK") date:t e:t email:nil f:t inline:t
+#+OPTIONS: num:nil p:nil pri:nil prop:nil stat:t tags:t tasks:t tex:t timestamp:t
+#+OPTIONS: title:t toc:nil todo:t |:t
+#+TITLE: Running Emacs in Docker
+#+DATE: <2016-12-12 Mon>
+#+AUTHOR: Julien Chastang
+#+EMAIL: julien dot c dot chastang at gmail
+#+LANGUAGE: en
+#+SELECT_TAGS: export
+#+EXCLUDE_TAGS: noexport
+#+CREATOR: Emacs 24.5.1 (Org mode 8.3.6)
+
+* <2016-12-12 Mon>
+
+I have a complex [[http://julienchastang.com/dotemacs.html][emacs configuration]] for my scientific programming workflows. This configuration assumes many external dependencies including:
+
+- Tex Live 
+- Gnuplot
+- ditaa
+- Java
+- Clojure
+- Python (via conda)
+  - netcdf4-python
+  - matplotlib
+  - cartopy
+  - jupyter
+  - jedi
+  - etc.
+- Miscellaneous utilities such as spelling programs
+
+In addition, I curate my own version of org-mode so I can control the version of org-mode I am running.
+
+In order to manage this complexity, I [[https://github.com/julienchastang/emacs-docker][created a Docker container]] to capture my emacs environement and its many dependencies. Running emacs in a container has several advantages. I can "codify" complex dependencies in a ~Dockerfile~. I also tend to avoid package managers other than brew on my Macbook Pro such as conda to avoid library conflicts that result in programs like meld (a Python program) not working. I realize there are solutions and workarounds to these problems but I appreciate the Docker sandboxing philosophy so I would just as soon choose that option. Finally, I like the Docker containers for the defined, reproducible, predictable medium they provide.
+
+My emacs container is fully-featured, but unfortunately it is rather huge. When I save the container image to a file, even compressed, it is 2.5 gigabytes. Being on a fast network is imperitive for building or downloading this container.
+
+Finally, I run X11 emacs, which by the way, [[https://github.com/Homebrew/homebrew-core/pull/3531][is no longer maintained by brew]]. This was the last tricky part but [[https://fredrikaverpil.github.io/2016/07/31/docker-for-mac-and-gui-applications/][this blog entry]] showed me how to run GUI programs in Docker on my Macbook Pro.

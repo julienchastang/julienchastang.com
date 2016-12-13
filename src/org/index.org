@@ -72,8 +72,6 @@
   collection.set_array(np.array(colors))
   ax.add_collection(collection)
 
-  ax.autoscale_view('tight')
-
   plt.axis('equal')
   plt.axis('off')
   plt.grid('off')

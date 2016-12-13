@@ -14,6 +14,6 @@
 #+SETUPFILE: ../../templates/level-1.org
 #+INCLUDE: ../../templates/level-1.org
 
-* <2016-12-08 Thu> julienchastang.com
+* <2016-12-08 Thu>
 
 This website was build in a few hours with emacs org-mode. It heavily borrows from the work of [[http://explog.in/][Kunal Bhalla]].
