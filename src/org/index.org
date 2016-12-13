@@ -84,3 +84,5 @@
 * Notes
 
 ** <2016-12-08 Thu> [[file:blog/first.org][This Web Site]]
+** <2016-12-12 Mon> [[file:blog/emacs-docker.org][Running Emacs in Docker]]
+
