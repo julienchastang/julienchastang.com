@@ -4,7 +4,7 @@
 #+OPTIONS: title:t toc:nil todo:t |:t
 #+TITLE: Configuration
 #+DATE: <2016-12-06 Tue>
-#+AUTHOR: chastang
+#+AUTHOR: Julien Chastang
 #+EMAIL: julien dot c dot chastang at gmail
 #+LANGUAGE: en
 #+SELECT_TAGS: export
@@ -153,7 +153,6 @@ This website heavily borrows from the work of [[http://explog.in/][Kunal Bhalla]
   }
 #+END_SRC
 
-
 * Header
 #+NAME: header
 #+BEGIN_SRC css :noweb yes :results none
@@ -162,7 +161,6 @@ This website heavily borrows from the work of [[http://explog.in/][Kunal Bhalla]
     <<style>>
   </style>
 #+END_SRC
-
 
 * Publishing configuration
 #+BEGIN_SRC emacs-lisp :noweb yes :results none
@@ -230,6 +228,6 @@ This website heavily borrows from the work of [[http://explog.in/][Kunal Bhalla]
    (kbd "C-c c")
    (lambda ()
      (interactive)
-     (org-babel-load-file "~/git/julienchastang/src/org/config.org")))
+     (org-babel-load-file "~/git/julienchastang/src/org/configuration.org")))
   ; (org-babel-execute-buffer)
 #+END_SRC
