@@ -1,7 +1,7 @@
 #+OPTIONS: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline author:t c:nil
 #+OPTIONS: creator:nil d:(not "LOGBOOK") date:t e:t email:nil f:t inline:t
-#+OPTIONS: num:1 p:nil pri:nil prop:nil stat:t tags:t tasks:t tex:t timestamp:t
-#+OPTIONS: title:t toc:t todo:t |:t
+#+OPTIONS: num:nil p:nil pri:nil prop:nil stat:t tags:t tasks:t tex:t timestamp:t
+#+OPTIONS: title:t toc:nil todo:t |:t
 #+TITLE: .emacs
 #+DATE: <2016-12-06 Tue>
 #+AUTHOR: chastang
