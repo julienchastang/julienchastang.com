@@ -35,7 +35,8 @@
       plt.text(xy[0], y, text, ha="center", family='sans-serif', size=j)
 
 
-  fig, ax = plt.subplots(); patches = []
+  fig, ax = plt.subplots()
+  patches = []
 
   xy = np.array([0, 0])
   c = xy
@@ -44,7 +45,8 @@
 
   for j in range(1, 7 + 4):
       t += 90
-      if i == 5: i = 1
+      if i == 5:
+          i = 1
       if i == 1:
           xy = xy + [-fib(j - 2), fib(j - 1)]
           c = c + [-fib(j - 2), 0]
@@ -80,6 +82,7 @@
 
 #+RESULTS:
 [[file:../static/shell.png]]
+
 
 * Notes
 
