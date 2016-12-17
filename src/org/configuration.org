@@ -16,6 +16,16 @@
 
 This website heavily borrows from the work of [[http://explog.in/][Kunal Bhalla]] and can be found on [[https://github.com/julienchastang/julienchastang.com][github]]. 
 
+
+* Org Export Set up (Internal Only)                                :noexport:
+
+# org-mode stuff. Don't want confirmation for babel exec, nor should babel block be evaluated during export.
+
+#+BEGIN_SRC emacs-lisp :results silent :exports none 
+  (setq org-confirm-babel-evaluate nil)
+  (setq org-export-babel-evaluate nil)
+#+END_SRC
+
 * Imports
 #+BEGIN_SRC emacs-lisp :results none
   (require 'ob-css)
@@ -62,6 +72,11 @@ This website heavily borrows from the work of [[http://explog.in/][Kunal Bhalla]
   h1.title {
     border-bottom: solid #d4d4d4 1px;
     padding-bottom: .2em;
+    text-align: left;
+  }
+
+  .figure p {
+    text-align: left;
   }
 
   #postamble {
