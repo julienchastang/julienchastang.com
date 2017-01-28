@@ -22,6 +22,13 @@ I am scientific software developer living in beautiful [[http://en.wikipedia.org
 
 [fn:1] The [[http://www.unidata.ucar.edu][Unidata Program Center]] (UPC) is part of the [[https://www.ucp.ucar.edu/][UCAR Community Programs]] (UCP), which is part of the [[http://www.ucar.edu][University Corporation for Atmospheric Research]] (UCAR). The most well-known organization within UCAR is the [[http://ncar.ucar.edu][National Center for Atmospheric Research]] (NCAR) partially located at the iconic [[https://www2.ucar.edu/campus/mesa-laboratory][Mesa Lab]] in Boulder.
 
+** Curriculum Vitæ
+
+[[file:../static/cv.pdf][PDF version]] 
+[[file:cv/cv.org.html][org version]]
+
+[[../static/julienchastang.bib][BibTex file]]
+
 ** Contact
 
 Contact me for work related stuff at chastang at ucar dot edu and for personal stuff at julien.c.chastang at gmail.
