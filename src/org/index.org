@@ -14,6 +14,11 @@
 #+SETUPFILE: ../templates/level-0.org
 #+INCLUDE: ../templates/level-0.org
 
+#+BEGIN_SRC emacs-lisp :results silent :exports none
+  (setq org-confirm-babel-evaluate nil)
+  (setq org-export-babel-evaluate nil)
+#+END_SRC
+
 #+BEGIN_SRC ipython :session :exports results :file ../static/shell.png 
   import matplotlib.pyplot as plt
   import numpy as np
@@ -86,6 +91,7 @@
 
 * Notes
 
+** <2017-02-01 Wed> [[file:blog/goes13.org][Exploring GOES 13 Satellite Data with Python and Emacs]]
 ** <2016-12-12 Mon> [[file:blog/emacs-docker.org][Running Emacs in Docker]]
 
 ** <2016-12-08 Thu> [[file:blog/first.org][This Web Site]]
