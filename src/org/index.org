@@ -88,11 +88,16 @@
 #+RESULTS:
 [[file:../static/shell.png]]
 
-
 * Notes
 
+** <2017-03-01 Wed> [[file:blog/weatherobs.org][Plotting Time Series of Weather Observations in Emacs]]
+
+
 ** <2017-02-01 Wed> [[file:blog/goes13.org][Exploring GOES 13 Satellite Data with Python and Emacs]]
+
+
 ** <2016-12-12 Mon> [[file:blog/emacs-docker.org][Running Emacs in Docker]]
+
 
 ** <2016-12-08 Thu> [[file:blog/first.org][This Web Site]]
 

@@ -14,8 +14,9 @@
 #+SETUPFILE: ../templates/level-0.org
 #+INCLUDE: ../templates/level-0.org
 
-This website heavily borrows from the work of [[http://explog.in/][Kunal Bhalla]] and can be found on [[https://github.com/julienchastang/julienchastang.com][github]]. 
+#+PROPERTY: header-args :noweb no
 
+This website heavily borrows from the work of [[http://explog.in/][Kunal Bhalla]] and can be found on github [[https://github.com/julienchastang/julienchastang.com][here]] and [[https://github.com/julienchastang/julienchastang.github.io][here]]. 
 
 * Org Export Set up (Internal Only)                                :noexport:
 
@@ -170,7 +171,7 @@ This website heavily borrows from the work of [[http://explog.in/][Kunal Bhalla]
 
 * Header
 #+NAME: header
-#+BEGIN_SRC css :noweb yes :results none
+#+BEGIN_SRC css :results none
   <link href='https://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400i,700' rel='stylesheet' />
   <style type='text/css'>
     <<style>>
@@ -178,7 +179,7 @@ This website heavily borrows from the work of [[http://explog.in/][Kunal Bhalla]
 #+END_SRC
 
 * Publishing configuration
-#+BEGIN_SRC emacs-lisp :noweb yes :results none
+#+BEGIN_SRC emacs-lisp :results none
   (defun create-source-link (filename)
     (concat "./" (file-name-nondirectory filename) ".html"))
 

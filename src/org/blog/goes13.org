@@ -18,6 +18,8 @@
 
 * <2017-02-01 Wed>
 
+[[file:../../static/goes.png]]
+
 I recently came across some [[https://en.wikipedia.org/wiki/GOES_13][GOES 13]] satellite data ([[http://jetstream.unidata.ucar.edu/repository/entry/show?entryid=5c36288d-208d-46f4-a8c7-228127a6e0f2][available here]]) I wanted to visualize. In order to do that, we can make use of the [[file:emacs-docker.org][Emacs Docker container I wrote about previously]] that has a full-fledged Scientific Python environment. The data in question are in [[http://www.unidata.ucar.edu/software/netcdf/][netCDF format]]. Everything that follows could be done with a [[http://jupyter.org/][Jupyter notebook]], but it's often best to keep our workflows within Emacs and org-mode whenever possible.
 
 #+BEGIN_SRC emacs-lisp :results silent :exports none  :tangle no
@@ -114,7 +116,7 @@ Even though the variable metadata indicates no fill value, we've probably stumbl
   datamask = ma.masked_values(lat[:], 2.14328934e+09)
 #+END_SRC
 
-Before we make use of our mask, let's get the ~lon~ and ~data~:
+Before we make use of our mask, let's get the ~lon~ and ~data~ variables:
 
 #+BEGIN_SRC ipython :session :results output
   lon = ncvars['lon']
