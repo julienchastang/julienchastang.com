@@ -23,6 +23,7 @@
 
 * <2017-03-01 Wed>
 
+#+CAPTION: Time Series of Weather Observations
 file:../../static/weatherobs/timeseries.svg
 
 ** Introduction
@@ -116,7 +117,7 @@ For the particular example we are shooting for, we will supply the following URL
   - ~vars~, the [[https://synopticlabs.org/api/mesonet/variables/][sensor variables]]
   - ~obtimezone~, the timezone of the response data (i.e., UTC or local)
   - ~output~, the output format (e.g., csv) 
-  - ~token~, the request token in this case guest
+  - ~token~, the request token, in this case guest
 
 ** Set up Parameterization With noweb
 <<params>>
@@ -125,7 +126,7 @@ We will once again be make use of ob-http to retrieve the data, but, this time, 
 
 *** Start Time
 
-Obtain the start time range will be 24 hours ago. Also set the time zone as UTC since that is what the SynopticLabs API requires.
+The start time range will be 24 hours ago. Also set the time zone as UTC since that is what the SynopticLabs API requires.
 
 #+NAME: starttime
 #+BEGIN_SRC emacs-lisp
@@ -296,12 +297,12 @@ At this point, we are ready to plot our data table with gnuplot. The following c
   - Wind speed
   - Wind direction
 
-One tricky part, is I had to alternate the Y-axis labeling so that the successive plot labels would not run into one another.
+One tricky part is I had to alternate the Y-axis labeling so that the successive plot labels would not run into one another.
 
-#+begin_src gnuplot :var data=data-table :noweb yes :file ../../static/weatherobs/timeseries.svg
+#+BEGIN_SRC gnuplot :var data=data-table :noweb yes :file ../../static/weatherobs/timeseries.svg
   reset
 
-  set terminal svg size 800, 800 enhanced truecolor font 'Verdana,13'
+  set terminal svg size 600, 800 enhanced truecolor font 'Verdana,13'
 
   set multiplot layout 5,1 rowsfirst
 
@@ -335,8 +336,8 @@ One tricky part, is I had to alternate the Y-axis labeling so that the successiv
   set title " "
 
   set yrange [:*]
-  set ytics offset 80,0
-  set ylabel "Celsius" offset 88
+  set ytics offset 56,0
+  set ylabel "Celsius" offset 63
 
   set tmargin 0
   set offsets graph 0, 0, 10, 1
@@ -359,8 +360,8 @@ One tricky part, is I had to alternate the Y-axis labeling so that the successiv
   plot data using "Date Time":"RH" with linespoints ls 4 title 'RH'
 
   set yrange [0:*]
-  set ytics offset 80,0
-  set ylabel "Meters per Second" offset 88
+  set ytics offset 55,0
+  set ylabel "Meters per Second" offset 63
 
   set offsets graph 0, 0, 1, 0
 
@@ -373,7 +374,7 @@ One tricky part, is I had to alternate the Y-axis labeling so that the successiv
   set format x "%m/%d %Hh"
 
   set yrange [0:360]
-  set ylabel "Direction" offset 0
+  set ylabel "Direction From" offset 0
   set ytics ("N" 0,"NE" 45,"E" 90 ,"SE" 135, "S" 180, "SW" 225, "W" 270, "NW" 315) offset 0,0
 
   set bmargin 4
@@ -384,14 +385,15 @@ One tricky part, is I had to alternate the Y-axis labeling so that the successiv
   plot data using " Date Time":"Wind Direction" pt 3 ps 1.0 title 'Wind Direction'
 
   unset multiplot
-#+end_src
+#+END_SRC
 
+#+CAPTION: Time series of Time Series of Weather Observations
 #+RESULTS:
 [[file:../../static/weatherobs/timeseries.svg]]
 
 ** Babel
 
-As mentioned in the [[intro][introduction]], to generate the data table and plot, , this entire buffer can be run in literate programming fashion with ~org-babel-execute-buffer~ (~C-c C-v C-b~). You can parameterize the start and end time, and the station ID via [[params][noweb parameters]]. I will leave it as an exercise to the reader to supply additional parameterization for the station variables, for example.
+As mentioned in the [[intro][introduction]], to generate the data table and plot, this entire buffer can be run in literate programming fashion with ~org-babel-execute-buffer~ (~C-c C-v C-b~). You can parameterize the start and end time, and the station ID via [[params][noweb parameters]]. I will leave it as an exercise to the reader to supply additional parameterization for the station variables, for example.
 
 ** Ideas for Improvements
 
