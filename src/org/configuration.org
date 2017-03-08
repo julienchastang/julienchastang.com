@@ -167,6 +167,10 @@ This website heavily borrows from the work of [[http://explog.in/][Kunal Bhalla]
   .footnotes {
     margin-top: 1em;
   }
+
+  table, td, th {
+    border: 1px solid black;
+  } 
 #+END_SRC
 
 * Header
