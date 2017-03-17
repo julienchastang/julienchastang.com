@@ -94,6 +94,10 @@ I specialize in scientific data, metadata, analysis and visualization using a va
 
 \fullcite{Chastang:2017b:Online}
 
+* Online Videos
+
+\fullcite{Chastang:2013:Online}\\
+
 * Selected Open Source Repositories
 #+ATTR_LATEX: :center nil
 | Unidata/unidata-python-workshop | https://github.com/Unidata/unidata-python-workshop |
