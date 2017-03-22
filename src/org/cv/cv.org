@@ -31,11 +31,11 @@
 #+LATEX_HEADER: \bibliography{../../static/julienchastang.bib}
 
 #+ATTR_LATEX: :center nil
-| Unidata Program Center  |
-| UCAR Community Programs |
-| 1850 Table Mesa Drive   |
-| Boulder, CO 80305       |
-| USA                     |
+| Unidata Program Center |
+| UCAR Community Program |
+| 3300 Mitchell Lane     |
+| Boulder, CO 80301      |
+| USA                    |
 * Contact
 #+ATTR_LATEX: :center nil
 | phone       | +1.303.497.2825            |
@@ -100,6 +100,7 @@ I specialize in scientific data, metadata, analysis and visualization using a va
 
 * Selected Open Source Repositories
 #+ATTR_LATEX: :center nil
+| Unidata/xsede-jetstream         | https://github.com/Unidata/xsede-jetstream         |
 | Unidata/unidata-python-workshop | https://github.com/Unidata/unidata-python-workshop |
 | Unidata/online-python-training  | https://github.com/Unidata/online-python-training  |
 | julienchastang/charts4j         | https://github.com/julienchastang/charts4j         |
