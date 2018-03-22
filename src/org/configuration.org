@@ -28,6 +28,7 @@ This website heavily borrows from the work of [[http://explog.in/][Kunal Bhalla]
 #+END_SRC
 
 * Imports
+
 #+BEGIN_SRC emacs-lisp :results none
   (require 'ob-css)
   (require 'ox-publish)
@@ -227,11 +228,11 @@ This website heavily borrows from the work of [[http://explog.in/][Kunal Bhalla]
    org-publish-project-alist
    `(,@(create-project-configuration
         "jc-notes"
-        "/home/python/work/julienchastang/src/org"
-        "/home/python/work/julienchastang/publish/julienchastang.github.io/")
+        "/home/emacs/work/julienchastang/src/org"
+        "/home/emacs/work/julienchastang/publish/julienchastang.github.io/")
      ("jc-static"
-      :base-directory "/home/python/work/julienchastang/src/static/"
-      :publishing-directory "/home/python/work/julienchastang/publish/julienchastang.github.io/static/"
+      :base-directory "/home/emacs/work/julienchastang/src/static/"
+      :publishing-directory "/home/emacs/work/julienchastang/publish/julienchastang.github.io/static/"
       :base-extension any
       :recursive t
       :publishing-function org-publish-attachment)
@@ -248,6 +249,6 @@ This website heavily borrows from the work of [[http://explog.in/][Kunal Bhalla]
    (kbd "C-c c")
    (lambda ()
      (interactive)
-     (org-babel-load-file "/home/python/work/julienchastang/src/org/configuration.org")))
+     (org-babel-load-file "/home/emacs/work/julienchastang/src/org/configuration.org")))
   ; (org-babel-execute-buffer)
 #+END_SRC

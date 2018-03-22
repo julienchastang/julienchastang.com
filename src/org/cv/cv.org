@@ -70,10 +70,17 @@ UCAR is the University Corporation for Atmospheric Research located in Boulder, 
 | $20,000  | 2016 | Microsoft Azure for Research cloud computing grant | Principal Investigator |
 | $425,000 | 2016 | XSEDE cloud computing research grant              | Allocation Manager     |
 * Conference Presentations
-\fullcite{Chastang2017a}\\
+
+\fullcite{Ramamurthy2017}\\
+
+
+\fullcite{Chastang2017c}\\
 
 
 \fullcite{Chastang2017b}\\
+
+
+\fullcite{Chastang2017a}\\
 
 
 \fullcite{Chastang2016}\\
