@@ -1,0 +1,11 @@
+baseURL = ""
+languageCode = "en-us"
+title = " "
+theme = "basics"
+
+pygmentsCodeFences = true
+PygmentsStyle = "emacs"
+
+
+[params]
+    github = "julienchastang"

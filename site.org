@@ -1,0 +1,43 @@
+#+TITLE: Julien Chastang
+#+AUTHOR: Julien Chastang
+#+EMAIL: chastang@ucar.edu
+#+LANGUAGE: en
+#+CREATOR: Emacs 26.1 (Org mode 9.1.6)
+#+STARTUP: content
+
+#+HUGO_BASE_DIR: .
+#+HUGO_SECTION: post
+
+* About
+:PROPERTIES:
+:EXPORT_HUGO_SECTION: /
+:EXPORT_FILE_NAME: about
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER:
+:EXPORT_DATE: 2018-11-02
+:END:
+
+[[file:static/me.png]]
+
+I am scientific software developer living in beautiful [[http://en.wikipedia.org/wiki/Boulder,_Colorado][Boulder, Colorado USA]]. I am passionate about the application of computing technology to science and math. I am currently employed at the [[http://www.unidata.ucar.edu][Unidata Program Center]] and have been part of the [[http://www.ucar.edu][UCAR organization]] [fn:1] since 1999 when I started here as a [[http://www.ucar.edu/communications/staffnotes/9907/newhires.html][student]]. I specialize in scientific data, metadata, analysis and visualization using a variety of programming languages and technologies.
+
+[fn:1] The [[http://www.unidata.ucar.edu][Unidata Program Center]] (UPC) is part of the [[https://www.ucp.ucar.edu/][UCAR Community Programs]] (UCP), which is part of the [[http://www.ucar.edu][University Corporation for Atmospheric Research]] (UCAR). The most well-known organization within UCAR is the [[http://ncar.ucar.edu][National Center for Atmospheric Research]] (NCAR) partially located at the iconic [[https://www2.ucar.edu/campus/mesa-laboratory][Mesa Lab]] in Boulder.
+
+** Contact
+
+Contact me for work related stuff at chastang at ucar dot edu and for personal stuff at julien.c.chastang at gmail.
+
+* Julien Chastang
+:PROPERTIES:
+:EXPORT_HUGO_SECTION: /
+:EXPORT_FILE_NAME: _index
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER:
+:END:
+
+* Blog
+** Migrating Blog to Hugo
+:PROPERTIES:
+:EXPORT_FILE_NAME: blog
+:EXPORT_DATE: 2018-11-02
+:END:
+
+Revamping this site. More to come hopefully.
