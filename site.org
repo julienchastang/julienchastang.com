@@ -34,6 +34,21 @@ Contact me for work related stuff at chastang at ucar dot edu and for personal s
 :END:
 
 * Blog
+
+** Installing X11 Emacs with homebrew
+:PROPERTIES:
+:EXPORT_FILE_NAME: x11
+:EXPORT_DATE: <2019-05-01 Wed>
+:END:
+
+A while back it was decided that [[https://github.com/Homebrew/homebrew-core/pull/3531#issuecomment-251857552][X11 support would be removed from homebrew-core]]. Taking matters into my own hands and in the spirit of OSS, I now [[https://github.com/julienchastang/homebrew-core/tree/x11emacs][maintain my own version for anyone who wants it]]. On MacOS, you will find homebrew-core in =/usr/local/Homebrew/Library/Taps/homebrew/homebrew-core=.
+
+Once you have the fork ~brew reinstall emacs --with-x11~.
+
+I only occasionally maintain that branch so if you want something more up-to-date, be sure to rebase against ~homebrew-core/master~.
+
+Enjoy!
+
 ** Migrating Blog to Hugo
 :PROPERTIES:
 :EXPORT_FILE_NAME: blog
