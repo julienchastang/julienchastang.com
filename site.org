@@ -35,6 +35,33 @@ Contact me for work related stuff at chastang at ucar dot edu and for personal s
 
 * Blog
 
+** Extending Emacs rgrep for Org Mode Only Search
+:PROPERTIES:
+:EXPORT_FILE_NAME: rgrep
+:EXPORT_DATE: <2019-05-23 Thu>
+:END:
+
+I recently wanted to extend emacs ~rgrep~ to search within org files only. Here is what I came up with:
+
+
+#+BEGIN_SRC emacs-lisp
+  (defun jc/rgrep-org (regexp dir)
+    "rgrep for org files only"
+    (interactive
+     (progn
+       (grep-compute-defaults)
+       (let* ((regexp (grep-read-regexp))
+              (dir (read-directory-name "Base directory: "
+                                        nil default-directory t)))
+         (list regexp dir))))
+    (rgrep regexp "*.org" dir nil))
+#+END_SRC
+
+
+Note that in order to get this ~jc/rgrep-org~ function to work, I had to study and borrow from the internals of ~rgrep~. In particular, the ~interactive~ form was most inspired  from studying ~grep.el.gz~.
+\\
+ ~M-x find-function rgrep~ for more details.
+
 ** Installing X11 Emacs with homebrew
 :PROPERTIES:
 :EXPORT_FILE_NAME: x11
