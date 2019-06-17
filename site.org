@@ -35,6 +35,48 @@ Contact me for work related stuff at chastang at ucar dot edu and for personal s
 
 * Blog
 
+** Join lines, vi-style in Emacs
+:PROPERTIES:
+:EXPORT_FILE_NAME: join-lines
+:EXPORT_DATE: <2019-10-18 Fri>
+:END:
+
+I mostly edit in Emacs but occasionally I like to use vi. vi is often the only editor available in certain computing environments. In Emacs, I find myself missing vi's join line capability. Emacs' closest equivalent is ~M-^~ or the unintuitively named  ~delete-indentation~ function. ~M-^~ is awkward in that it joins the current line to the previous line. This behavior feels unnatural especially when joining many lines in succession where you have to go to the end of the block you want to join and repeatedly type ~M-^~.
+
+Instead, we can write an Emacs keyboard macro to mimic the vi join line capability. I followed Mike Zamansky's [[https://youtu.be/Y1oVNBuIoXo][video]] on how to write macros. He also has a [[https://youtu.be/49kBWM3RQQ8][great YouTube channel on emacs]], by the way. Start "recording" the macro with ~C-x (~  and end it with ~C-x )~. This terminal session in the emacs ~*scratch*~ buffer should give you an idea of how I created the macro.
+
+#+BEGIN_EXPORT html
+<script id="asciicast-275378" src="https://asciinema.org/a/275378.js" async></script>
+#+END_EXPORT
+
+Name the macro you just created with ~M-x kmacro-name-last-macro~. Here, I named it ~jc/join-lines~. Capture the emacs-lisp with ~M-x insert-kbd-macro~ which may yield:
+
+#+BEGIN_SRC emacs-lisp
+  (fset 'jc/join-lines
+        (lambda (&optional arg) "Keyboard macro." (interactive "p")
+          (kmacro-exec-ring-item (quote ("^N^A^? ^B" 0 "%d")) arg)))
+#+END_SRC
+
+or
+
+#+BEGIN_SRC emacs-lisp
+  (fset 'jc/join-lines
+        (lambda (&optional arg) "Keyboard macro." (interactive "p")
+          (kmacro-exec-ring-item (quote ([14 1 backspace 32 2] 0 "%d")) arg)))
+#+END_SRC
+
+depending on your emacs terminal environment. In my situation, iTerm created the former and X11 the latter.
+
+Note in the first code snippet, those are control characters in the quoted region (e.g., next line, beginning of line, etc.), not caret N, etc. If you simply try to copy/paste this snippet, it will not work as intended. It is best to create the macro as described here to properly capture your intention.
+
+ Finally, let's create a global key binding.
+
+#+BEGIN_SRC emacs-lisp
+  (global-set-key (kbd "C-c j") 'jc/join-lines)
+#+END_SRC
+
+You can put these snippets of emacs-lisp in your emacs initialization file to always have this macro available.
+
 ** Extending Emacs rgrep for Org Mode Only Search
 :PROPERTIES:
 :EXPORT_FILE_NAME: rgrep
