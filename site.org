@@ -13,14 +13,18 @@
 :EXPORT_HUGO_SECTION: /
 :EXPORT_FILE_NAME: about
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER:
-:EXPORT_DATE: 2018-11-02
+:EXPORT_DATE: <2019-10-18 Fri>
 :END:
 
-[[file:static/me.png]]
+#+NAME: fig:figure name
+#+CAPTION: me
+#+ATTR_ORG: :width 200
+#+ATTR_HTML: :width 200px
+[[file:static/me.jpg]]
 
-I am scientific software developer living in beautiful [[http://en.wikipedia.org/wiki/Boulder,_Colorado][Boulder, Colorado USA]]. I am passionate about the application of computing technology to science and math. I am currently employed at the [[http://www.unidata.ucar.edu][Unidata Program Center]] and have been part of the [[http://www.ucar.edu][UCAR organization]] [fn:1] since 1999 when I started here as a [[http://www.ucar.edu/communications/staffnotes/9907/newhires.html][student]]. I specialize in scientific data, metadata, analysis and visualization using a variety of programming languages and technologies.
+I am scientific software developer living in beautiful [[http://en.wikipedia.org/wiki/Boulder,_Colorado][Boulder, Colorado USA]]. I am passionate about the application of computing technology to science and math. I am currently employed at the [[http://www.unidata.ucar.edu][Unidata Program Center]] and have been part of the [[http://www.ucar.edu][UCAR organization]] [fn:1] since 1999 when I started here as a [[./static/student.png][student]]. I specialize in scientific data, metadata, analysis and visualization using a variety of programming languages and technologies. I am also an [[https://www.gnu.org/software/emacs/][emacs]] enthusiast.
 
-[fn:1] The [[http://www.unidata.ucar.edu][Unidata Program Center]] (UPC) is part of the [[https://www.ucp.ucar.edu/][UCAR Community Programs]] (UCP), which is part of the [[http://www.ucar.edu][University Corporation for Atmospheric Research]] (UCAR). The most well-known organization within UCAR is the [[http://ncar.ucar.edu][National Center for Atmospheric Research]] (NCAR) partially located at the iconic [[https://www2.ucar.edu/campus/mesa-laboratory][Mesa Lab]] in Boulder.
+[fn:1] The [[http://www.unidata.ucar.edu][Unidata Program Center]] (UPC) is part of the [[https://www.ucar.edu/community-programs][UCAR Community Programs]] (UCP), which is part of the [[http://www.ucar.edu][University Corporation for Atmospheric Research]] (UCAR). The most well-known organization within UCAR is the [[http://ncar.ucar.edu][National Center for Atmospheric Research]] (NCAR) partially located at the iconic [[https://scied.ucar.edu/visit/ncar-public-tours][Mesa Lab]] in Boulder.
 
 ** Contact
 
@@ -34,7 +38,6 @@ Contact me for work related stuff at chastang at ucar dot edu and for personal s
 :END:
 
 * Blog
-
 ** Join lines, vi-style in Emacs
 :PROPERTIES:
 :EXPORT_FILE_NAME: join-lines
@@ -121,7 +124,7 @@ Enjoy!
 ** Migrating Blog to Hugo
 :PROPERTIES:
 :EXPORT_FILE_NAME: blog
-:EXPORT_DATE: 2018-11-02
+:EXPORT_DATE:  <2018-11-02 Fri>
 :END:
 
 Revamping this site. More to come hopefully.
