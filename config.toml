@@ -1,11 +1,18 @@
-baseURL = ""
+baseURL = "https://julienchastang.com"
 languageCode = "en-us"
-title = " "
-theme = "basics"
+title = "julienchastang"
+theme = "hugo-classic"
 
 pygmentsCodeFences = true
 PygmentsStyle = "emacs"
 
-
+[[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 1
+[[menu.feed]]
+    name = "rss"
+    url = "/index.xml"
 [params]
-    github = "julienchastang"
+    description = "Julien Chastang's Home on the Web"
+    footer = "[GitHub](https://github.com/julienchastang) | [.emacs](https://github.com/julienchastang/dotemacs) | [LinkedIn](https://www.linkedin.com/in/julienchastang) | [Twitter](https://twitter.com/JulienChastang) | [ox-hugo](https://ox-hugo.scripter.co)"

@@ -1,5 +1,4 @@
 #+TITLE: Julien Chastang
-#+AUTHOR: Julien Chastang
 #+EMAIL: chastang@ucar.edu
 #+LANGUAGE: en
 #+CREATOR: Emacs 26.1 (Org mode 9.1.6)
@@ -7,6 +6,8 @@
 
 #+HUGO_BASE_DIR: .
 #+HUGO_SECTION: post
+#+OPTIONS: author:nil
+
 
 * About
 :PROPERTIES:
