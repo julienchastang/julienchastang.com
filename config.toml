@@ -15,4 +15,4 @@ PygmentsStyle = "emacs"
     url = "/index.xml"
 [params]
     description = "Julien Chastang's Home on the Web"
-    footer = "[GitHub](https://github.com/julienchastang) | [.emacs](https://github.com/julienchastang/dotemacs) | [LinkedIn](https://www.linkedin.com/in/julienchastang) | [Twitter](https://twitter.com/JulienChastang) | [ox-hugo](https://ox-hugo.scripter.co)"
+    footer = "[GitHub](https://github.com/julienchastang) | [.emacs](https://github.com/julienchastang/dotemacs) | [LinkedIn](https://www.linkedin.com/in/julienchastang) | [Twitter](https://twitter.com/JulienChastang) | [Source](https://github.com/julienchastang/julienchastang.com)"
