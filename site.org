@@ -39,6 +39,26 @@ Contact me for work related stuff at chastang at ucar dot edu and for personal s
 :END:
 
 * Blog
+** Books I Read in 2019
+:PROPERTIES:
+:EXPORT_FILE_NAME: books-2019
+:EXPORT_DATE: <2019-12-28 Sat>
+:END:
+
+- *Ishi, Last of His Tribe* by Theodora Kroeber
+- *Ancient Walls: Indian Ruins of the Southwest* by Chuck Place
+- Very Short Introductions (Oxford University Press):
+  - *Anthropocene* by Erle C. Ellis
+  - *The Scientific Revolution* by Lawrence M. Principe
+  - *Galaxies* by John Gribbin
+  - *Voltaire* by Nicholas Cronk
+- French Literature
+  - *Bel Ami* by Guy De Maupassant
+  - *Une Vie* by Guy De Maupassant
+  - *Les Miserables* (Tomes I-V, ~2000 pages!) by Victor Hugo
+  - *Notre Dame de Paris* by Victor Hugo
+  - *Vingt Mille Lieues Sous Les Mers* by Jules Verne
+
 ** Join lines, vi-style in Emacs
 :PROPERTIES:
 :EXPORT_FILE_NAME: join-lines
