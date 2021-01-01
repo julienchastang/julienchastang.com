@@ -37,6 +37,25 @@ Contact me for work related stuff at chastang at ucar dot edu and for personal s
 :END:
 
 * Blog
+** Books I Read in 2020
+:PROPERTIES:
+:EXPORT_FILE_NAME: books-2020
+:EXPORT_DATE: <2020-12-31 Thu>
+:END:
+
+2020 was not quite the year I had hoped for in terms of reading or blogging. Anyway, here is my reading list for the last year:
+
+- *The Snowflake* by Kenneth Libbrecht
+- *The Columbian Exchange: Biological and Cultural Consequences of 1492* by Alfred W. Crosby
+- *Matilda* by Roald Dahl (I read a French translation of this book with my daughter.)
+- Littérature française
+  - *Le Comte de Monte-Cristo* (~1500 pages!) by Alexandre Dumas 
+  - *Les Liaisons Dangereuses* by Pierre Choderlos de Laclos
+  - *Le Père Goriot* by Honoré de Balzac
+  - *La Chartreuse de Parme* by Stendhal
+
+Let's hope life can get back to normal in 2021.
+
 ** Books I Read in 2019
 :PROPERTIES:
 :EXPORT_FILE_NAME: books-2019
