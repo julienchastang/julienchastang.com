@@ -43,7 +43,7 @@ Contact me for work related stuff at chastang at ucar dot edu and for personal s
 :EXPORT_DATE: <2021-09-19 Sun>
 :END:
 
-I was recently surprised to find some sensitive information in my macOS clipboard that I must have unintentionally copied there earlier. This information could accidentally leak out as a result of an unfortunate or inadvertent paste in a shared Google Doc, for example. Moreover, there is an abundance of information on the Internet concerning clipboards as hacking attack vectors.
+I was recently surprised to find some sensitive information in my macOS clipboard that I must have unintentionally copied there earlier. These data could accidentally leak out as a result of an unfortunate or inadvertent paste in a shared Google Doc, for example. Moreover, there is an abundance of evidence on the Internet concerning clipboards as hacking attack vectors.
 
 As result, I have added the following entry to my crontab:
 
