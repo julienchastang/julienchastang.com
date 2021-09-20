@@ -37,6 +37,22 @@ Contact me for work related stuff at chastang at ucar dot edu and for personal s
 :END:
 
 * Blog
+** For Security Purposes, Regularly Expunge Your macOS Clipboard
+:PROPERTIES:
+:EXPORT_FILE_NAME: pbcopy
+:EXPORT_DATE: <2021-09-19 Sun>
+:END:
+
+I was recently surprised to find some sensitive information in my macOS clipboard that I must have unintentionally copied there earlier. This information could accidentally leak out as a result of an unfortunate or inadvertent paste in a shared Google Doc, for example. Moreover, there is an abundance of information on the Internet concerning clipboards as hacking attack vectors.
+
+As result, I have added the following entry to my crontab:
+
+#+BEGIN_SRC sh
+  ,*/5 * * * * cat /dev/null | pbcopy > /dev/null 2>&1
+#+END_SRC
+
+~pbcopy~ and ~pbpaste~ provide access to the clipboard from the command line. This line results in the clipboard being regularly cleared every five minutes. It is possible you may be a little unlucky and have this command triggered in the middle of a copy/paste thereby losing your "copy",  but I am OK with that possibility for the security benefit.
+
 ** Books I Read in 2020
 :PROPERTIES:
 :EXPORT_FILE_NAME: books-2020
