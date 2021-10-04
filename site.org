@@ -37,6 +37,18 @@ Contact me for work related stuff at chastang at ucar dot edu and for personal s
 :END:
 
 * Blog
+** Update: Installing X11 Emacs with homebrew
+:PROPERTIES:
+:EXPORT_FILE_NAME: x11-update
+:EXPORT_DATE: <2021-10-04 Mon>
+:END:
+
+In 2019, [[https://julienchastang.com/post/x11/][I wrote about maintaining my own homebrew formula for X11 emacs]]. [[https://github.com/julienchastang/homebrew-core/tree/x11emacs][I continue to maintain this bit of code from time to time]]. Moreover, [[https://github.com/Homebrew/homebrew-core/issues/31510][homebrew no longer support 'with' style options]] (e.g., ~--with-x11~ ) so the installation command has changed:
+
+~brew reinstall --build-from-source emacs~
+
+You will find homebrew-core in =/usr/local/Homebrew/Library/Taps/homebrew/homebrew-core=. Once you have [[https://github.com/julienchastang/homebrew-core/tree/x11emacs][my homebrew GitHub fork]], run that command to install X11 emacs. There are no additional options with that command. X11 emacs is all you get.
+
 ** For Security Purposes, Regularly Expunge Your macOS Clipboard
 :PROPERTIES:
 :EXPORT_FILE_NAME: pbcopy
@@ -166,6 +178,8 @@ Note that in order to get this ~jc/rgrep-org~ function to work, I had to study a
 :EXPORT_FILE_NAME: x11
 :EXPORT_DATE: <2019-05-01 Wed>
 :END:
+
+*Edit*: As of <2021-10-04 Mon>, this post is out of date. Please see [[https://julienchastang.com/post/x11-update/][here for updated instructions]].
 
 A while back it was decided that [[https://github.com/Homebrew/homebrew-core/pull/3531#issuecomment-251857552][X11 support would be removed from homebrew-core]]. Taking matters into my own hands and in the spirit of OSS, I now [[https://github.com/julienchastang/homebrew-core/tree/x11emacs][maintain my own version for anyone who wants it]]. On MacOS, you will find homebrew-core in =/usr/local/Homebrew/Library/Taps/homebrew/homebrew-core=.
 
