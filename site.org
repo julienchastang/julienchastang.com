@@ -37,6 +37,29 @@ Contact me for work related stuff at chastang at ucar dot edu and for personal s
 :END:
 
 * Blog
+
+** Books I Read in 2021
+:PROPERTIES:
+:EXPORT_FILE_NAME: books-2021
+:EXPORT_DATE: <2021-12-31 Fri>
+:END:
+
+The books I read in 2021:
+
+- *Eclipse: The Celestial Phenomenon That Changed the Course of History* by Duncan Steel
+- *Cryptography: A Very Short Introduction* by Fred C. Piper, Sean Murphy
+- *The Measure of All Things: The Seven-Year Odyssey and Hidden Error That Transformed the World* by Ken Alder
+- Littérature française:
+  - *Le Misanthrope* by Molière
+  - *Le Malade imaginaire* by Molière
+  - *L'Avare* by Molière
+  - *La Horla* by Guy de Maupassant
+  - *La géographie de la France* by Gérard Labrune
+  - *Germinal* by Émile Zola
+  - *Petite Histoire de France* by Jacques Bainville
+
+I had hoped to read more books in 2021 though I am in the middle of a few others that I was not able to complete this year.
+
 ** Update: Installing X11 Emacs with homebrew
 :PROPERTIES:
 :EXPORT_FILE_NAME: x11-update
