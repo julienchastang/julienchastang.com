@@ -48,9 +48,9 @@ The books I read in 2022:
 
 - *The Picture of Dorian Gray* by Oscar Wilde
 - *On the Road* by Jack Kerouac
+- *La Guerre de Cent Ans* by Jean Favier
 - Littérature française:
   - *Les Trois Mousquetaires* by Alexandre Dumas
-  - *La Guerre de Cent Ans* by Jean Favier
 
 Yet another poor year for not completing many books though in my own defense a couple of them were quite long. Hopefully, 2023 will be better in the reading category.
 
@@ -65,14 +65,14 @@ The books I read in 2021:
 - *Eclipse: The Celestial Phenomenon That Changed the Course of History* by Duncan Steel
 - *Cryptography: A Very Short Introduction* by Fred C. Piper, Sean Murphy
 - *The Measure of All Things: The Seven-Year Odyssey and Hidden Error That Transformed the World* by Ken Alder
+- *Petite Histoire de France* by Jacques Bainville
+- *La géographie de la France* by Gérard Labrune
 - Littérature française:
   - *Le Misanthrope* by Molière
   - *Le Malade imaginaire* by Molière
   - *L'Avare* by Molière
   - *La Horla* by Guy de Maupassant
-  - *La géographie de la France* by Gérard Labrune
   - *Germinal* by Émile Zola
-  - *Petite Histoire de France* by Jacques Bainville
 
 I had hoped to read more books in 2021 though I am in the middle of a few others that I was not able to complete this year.
 
@@ -99,10 +99,10 @@ I was recently surprised to find some sensitive data in my macOS clipboard that 
 As a result, I have added the following entry to my crontab:
 
 #+BEGIN_SRC sh
-  ,*/5 * * * * cat /dev/null | pbcopy > /dev/null 2>&1
+  ,*/45 * * * * cat /dev/null | pbcopy > /dev/null 2>&1
 #+END_SRC
 
-~pbcopy~ and ~pbpaste~ provide access to the clipboard from the macOS command line. This line results in the clipboard being regularly cleared every five minutes. It is possible you may be a little unlucky and have this command triggered in the middle of a copy/paste thereby losing your "copy",  but I am OK with that possibility for the security benefit.
+~pbcopy~ and ~pbpaste~ provide access to the clipboard from the macOS command line. This line results in the clipboard being regularly cleared every 45 minutes. It is possible you may be a little unlucky and have this command triggered in the middle of a copy/paste thereby losing your "copy",  but I am OK with that possibility for the security benefit.
 
 ** Books I Read in 2020
 :PROPERTIES:
