@@ -38,6 +38,22 @@ Contact me for work related stuff at chastang at ucar dot edu and for personal s
 
 * Blog
 
+** Books I Read in 2022
+:PROPERTIES:
+:EXPORT_FILE_NAME: books-2022
+:EXPORT_DATE: <2022-12-31 Sat>
+:END:
+
+The books I read in 2022:
+
+- *The Picture of Dorian Gray* by Oscar Wilde
+- *On the Road* by Jack Kerouac
+- Littérature française:
+  - *Les Trois Mousquetaires* by Alexandre Dumas
+  - *La Guerre de Cent Ans* by Jean Favier
+
+Yet another poor year for not completing many books though in my own defense a couple of them were quite long. Hopefully, 2023 will be better in the reading category.
+
 ** Books I Read in 2021
 :PROPERTIES:
 :EXPORT_FILE_NAME: books-2021
